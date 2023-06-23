@@ -1,0 +1,64 @@
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(https://thumbs.gfycat.com/BetterGeneralFawn-max-1mb.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-resgister {
+  width: 300px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form_box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form_input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  font-size: 16px;
+  background: transparent; /* Agregado */
+}
+
+.form_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  padding: 10px;
+  font-size: 14px;
+  transition: 0.2s ease all;
+}
+
+.form_input:focus + .form_label,
+.form_input:valid + .form_label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #1877f2;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
