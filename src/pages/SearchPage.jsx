@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { CardPokemon } from '../components';
 import { PokemonContext } from '../context/PokemonContext';
 import PokemonListButton from '../Botones/BTNSearch';
-import Botones from '../Botones/Botones';
+import Botones from '../Botones/CerraSesion';
 
 export const SearchPage = () => {
 	const location = useLocation();
