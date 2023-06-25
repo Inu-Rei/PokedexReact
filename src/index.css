@@ -499,5 +499,39 @@ Styles of Pokemon Single Page
 	cursor: pointer;
   }
 
-
-  
+/*boton nav menu*/
+.buttonMenu {
+	font-size: 18px;
+	padding: 10px 16px;
+	background-color: #4285f4;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 10px;
+  }
+	
+	.buttonMenu:hover {
+	  background-color: #1559a5;
+	}
+	
+	.buttonMenu:focus {
+	  outline: none;
+	  box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.3);
+	}
+	
+	.buttonMenu:active {
+	  background-color: #fff;
+	  color: #e10600;
+	  background-image: radial-gradient(circle, #ffde00 25%, transparent 25%),
+		radial-gradient(circle, transparent 25%, #e10600 26%, transparent 50%);
+	  background-position: center;
+	  background-size: 10px 10px;
+	  background-repeat: no-repeat;
+	}
+	.buttonContainer {
+	  position: fixed;
+	  top: 150px;
+	  right: 60px;
+	  z-index: 9999; /* Ajusta este valor según sea necesario */
+	}

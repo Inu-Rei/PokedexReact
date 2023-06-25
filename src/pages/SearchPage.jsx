@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import { CardPokemon } from '../components';
 import { PokemonContext } from '../context/PokemonContext';
-import PokemonListButton from '../Botones/BTNSearch';
-import Botones from '../Botones/CerraSesion';
+
+
 
 export const SearchPage = () => {
 	const location = useLocation();
@@ -29,8 +29,8 @@ export const SearchPage = () => {
 			</div>
 			
 		</div>
-		<Botones></Botones>
-		<PokemonListButton></PokemonListButton>
+		
+		
 
 		</>
 		

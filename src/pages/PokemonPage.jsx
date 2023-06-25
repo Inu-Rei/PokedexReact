@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import { Loader } from '../components';
 import { PokemonContext } from '../context/PokemonContext';
 import { primerMayuscula } from '../helper/helper';
-import PokemonDetail from '../Botones/BTN-Detail';
-import Botones from '../Botones/CerraSesion';
+
+
 
 export const PokemonPage = () => {
 	const { getPokemonByID } = useContext(PokemonContext);
@@ -108,8 +108,8 @@ export const PokemonPage = () => {
 							</div>
 						</div>
 					</div>
-					<Botones/>
-					<PokemonDetail />
+					
+					
 
 				</>
 			)}

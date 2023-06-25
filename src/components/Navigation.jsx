@@ -1,6 +1,9 @@
 import { useContext } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { PokemonContext } from '../context/PokemonContext';
+import '../CSS/botonListado.css';
+
+
 
 export const Navigation = () => {
 	const { onInputChange, valueSearch, onResetForm } =
@@ -16,7 +19,13 @@ export const Navigation = () => {
 
 		onResetForm();
 	};
-
+	
+	//cerrar sesion
+	const cerrarSesion = () => {
+	  // Lógica para cerrar sesión aquí
+	  localStorage.removeItem('token');
+	  navigate('/');
+	};
 	return (
 		<>
 			<header className='container'>
@@ -56,7 +65,19 @@ export const Navigation = () => {
 							onChange={onInputChange}
 							placeholder='Buscar nombre de pokemon'/>
 					<button className='btn-search'>Buscar</button>
+
+					<div className="button-Container">
+    					<button className="buttonMenu" onClick={cerrarSesion}>
+     						Cerrar Sesión
+    					</button>
+						{/* boton menu */}
+						<Link to="/HomePage">
+      				<button className="buttonMenu">Menu</button>
+    				</Link>
+    				</div>
+
 					
+
 					</nav>
 				</form>
 			</header>
