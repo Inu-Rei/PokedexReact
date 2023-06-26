@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { PokemonContext } from '../context/PokemonContext';
-import { CardPokemon } from '../components/CardPokemon';
-import { Loader } from '../components/Loader';
+import { CardPokemon } from './CardPokemon';
+import { Loader } from './Loader';
 
 
 

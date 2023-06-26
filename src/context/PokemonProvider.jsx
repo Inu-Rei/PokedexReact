@@ -75,7 +75,7 @@ export const PokemonProvider = ({ children }) => {
 
 	// BTN CARGAR MÁS
 	const onClickLoadMore = () => {
-		setOffset(offset + 50);
+		setOffset(offset + 12);
 	};
 
 	// Filter Function + State
