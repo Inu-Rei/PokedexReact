@@ -535,3 +535,145 @@ Styles of Pokemon Single Page
 	  right: 60px;
 	  z-index: 9999; /* Ajusta este valor según sea necesario */
 	}
+/* Estilos específicos para dispositivos móviles */
+
+@media (max-width: 767px) {
+	.container {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+
+	/* Estilos del header */
+	header {
+		padding: 20px 0;
+	}
+
+	.logo img {
+		width: 120px;
+	}
+
+	header form {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.form-group {
+		width: 100%;
+	}
+
+	.form-group input {
+		width: 100%;
+	}
+
+	.icon-search {
+		width: 16px;
+		height: 16px;
+	}
+
+	.btn-search {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	/* Estilos de la lista de tarjetas de Pokémon */
+	.card-list-pokemon {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+	}
+
+	.card-img {
+		height: 200px;
+	}
+
+	.card-info h3 {
+		font-size: 16px;
+	}
+
+	.pokemon-id {
+		font-size: 12px;
+	}
+
+	/* Estilos de la página de un solo Pokémon */
+	.main-pokemon {
+		margin-top: 80px;
+		margin-bottom: 30px;
+	}
+
+	.number-pokemon {
+		font-size: 120px;
+		top: -100px;
+	}
+
+	.container-img-pokemon {
+		padding: 0;
+		height: 300px;
+	}
+
+	.container-info-pokemon h1 {
+		font-size: 40px;
+	}
+
+	.info-pokemon {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 10px;
+	}
+
+	.group-info p {
+		font-size: 16px;
+	}
+
+	.container-stats {
+		flex-direction: column;
+		gap: 30px;
+		align-items: flex-start;
+	}
+
+	.stats .stat-group span {
+		font-size: 14px;
+	}
+
+	.progress-bar {
+		height: 20px;
+	}
+
+	/* Estilos del filtro */
+	.container-filters {
+		left: -100%;
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	.container-filters.active {
+		left: -100%;
+	}
+
+	.filter-by-type span {
+		font-size: 18px;
+	}
+
+	.group-type {
+		margin-left: 0;
+	}
+
+	/* Estilos de la barra de navegación */
+	.navbar {
+		padding: 8px;
+	}
+
+	.navbar-container {
+		max-width: 100%;
+	}
+
+	.search-form {
+		width: 100%;
+	}
+
+	.barra-busqueda {
+		width: 100%;
+	}
+
+	/* Otros estilos para dispositivos móviles */
+	/* ... */
+}
+

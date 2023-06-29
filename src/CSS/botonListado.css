@@ -37,3 +37,28 @@
   z-index: 9999;
 }
 
+/* Consulta de medios para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .button-Container {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .buttonMenu {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Consulta de medios para pantallas más grandes */
+@media (min-width: 1200px) {
+  .button-Container {
+    top: 40px;
+    right: 40px;
+  }
+  
+  .buttonMenu {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
